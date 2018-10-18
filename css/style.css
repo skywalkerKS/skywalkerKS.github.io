@@ -7,6 +7,15 @@
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header,
 .menu,
 .content,
@@ -16,8 +25,9 @@
 }
 
 .bg-header {
-    background-image: linear-gradient(180deg, #f5f7fa 0%, #c3cfe2 100%);
-    box-shadow: 0 2px 2px 0 #aaa;
+    background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
     position: sticky;
     top: 0;
 }
@@ -29,8 +39,33 @@
 }
 
 .header {
-    background: transparent;
     min-height: 100px;
+    position: relative;
+}
+
+
+/* 로고 */
+
+.logo {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+}
+
+
+/* 멤버서비스 */
+
+.member {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    padding-top: 1em;
+}
+
+.member li {
+    margin-left: 1em;
 }
 
 .menu {
