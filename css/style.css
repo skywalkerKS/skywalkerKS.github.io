@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* 스타일초기화 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header,
+.menu,
+.content,
+.footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    background: yellow;
+}
+
+.menu {
+    background: pink;
+}
+
+.content {
+    background: skyblue;
+}
+
+.footer {
+    background: orange;
+}
