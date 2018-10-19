@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
@@ -139,8 +140,8 @@ body {
 
 
 /* .main-menu a:hover {
-    background-color: yellow;
-    border-bottom: 1px dotted #181818;
+background-color: yellow;
+border-bottom: 1px dotted #181818;
 } */
 
 
@@ -158,11 +159,11 @@ body {
 
 .text-effect {
     /* background-color: yellow;
-    background-image: url("images/animation-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-attachment: fixed; */
+background-image: url("images/animation-bg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+background-attachment: fixed; */
     background: #333 url("images/animation-bg.jpg") no-repeat 50% 50% /cover fixed;
     width: 1000px;
     height: 300px;
@@ -181,12 +182,12 @@ body {
 
 .frame1 {
     /* animation-name: textSize;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 5s;
-    animation-timing-function: ease-in-out; */
+animation-duration: 3s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-delay: 5s;
+animation-timing-function: ease-in-out; */
     /* animation-play-state: paused; */
     animation: textSize 3s forwards alternate ease-in-out;
 }
@@ -224,12 +225,37 @@ body {
     }
 }
 
+.news,
+.media,
+.favorite {
+    padding: 20px;
+}
+
 
 /* 새소식*/
 
 .news {
     background-color: pink;
     width: 400px;
+}
+
+.news-date {
+    display: block;
+    text-align: right;
+    margin: 1em 0;
+}
+
+.news-brief {
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+.news-thumbnail {
+    text-align: center;
+}
+
+.news-thumbnail img {
+    width: 50%;
 }
 
 
