@@ -98,8 +98,6 @@ body {
     padding: 5px 0;
 }
 
-.main-menu li {}
-
 .main-menu a {
     font-weight: 700;
     font-size: 2rem;
@@ -109,11 +107,106 @@ body {
 }
 
 
-/* 메인메뉴 */
+/* 메인컨텐츠 */
 
 .content {
-    background: transparent;
-    min-height: 1000px;
+    background: skyblue;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* 애니메이션 */
+
+.text-effect {
+    /* background-color: yellow;
+    background-image: url("images/animation-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed; */
+    background: #333 url("images/animation-bg.jpg") no-repeat 50% 50% /cover fixed;
+    width: 1000px;
+    position: relative;
+}
+
+.text-frame {
+    font-weight: 700;
+    /* font-size: 60px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    background: blue;
+}
+
+.frame1 {
+    /* animation-name: textSize;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out; */
+    /* animation-play-state: paused; */
+    animation: textSize 3s forwards alternate ease-in-out;
+}
+
+.frame2 {
+    opacity: 0;
+    animation: textSpin 3s backwards 3s alternate ease-in-out;
+}
+
+@keyframes textSize {
+    0% {
+        font-size: 16px;
+    }
+    90% {
+        font-size: 60px;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes textSpin {
+    0% {
+        opacity: 0;
+        transform-origin: center;
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        font-size: 60PX;
+        transform: rotate(2turn);
+    }
+}
+
+
+/* 새소식*/
+
+.news {
+    background-color: pink;
+    width: 400px;
+}
+
+
+/*추천영상*/
+
+.media {
+    background-color: lime;
+    width: 600px;
+}
+
+
+/*인기사이트*/
+
+.favorite {
+    background-color: orange;
+    width: 1000px;
 }
 
 .footer {
